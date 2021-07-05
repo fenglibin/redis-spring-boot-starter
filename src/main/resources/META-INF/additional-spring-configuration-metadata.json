@@ -1,0 +1,131 @@
+{
+  "groups": [
+    {
+      "name": "spring.redis",
+      "type": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties"
+    },
+    {
+      "name": "spring.redis.cluster",
+      "type": "com.eeeffff.redis.spring.boot.RedisProperties$Cluster",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "sourceMethod": "getCluster()"
+    },
+    {
+      "name": "spring.redis.jedis",
+      "type": "com.eeeffff.redis.spring.boot.RedisProperties$Jedis",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "sourceMethod": "getJedis()"
+    },
+    {
+      "name": "spring.redis.jedis.pool",
+      "type": "com.eeeffff.redis.spring.boot.RedisProperties$Pool",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties$Jedis",
+      "sourceMethod": "getPool()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.redis.cluster.max-redirects",
+      "type": "java.lang.Integer",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties$Cluster"
+    },
+    {
+      "name": "spring.redis.cluster.nodes",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties$Cluster"
+    },
+    {
+      "name": "spring.redis.connection-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.database",
+      "type": "java.lang.Integer",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.host",
+      "type": "java.lang.String",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "defaultValue": "localhost"
+    },
+    {
+      "name": "spring.redis.hosts",
+      "type": "java.lang.String",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "defaultValue": "localhost:6379"
+    },
+    {
+      "name": "spring.redis.jedis.pool.max-active",
+      "type": "java.lang.Integer",
+      "description": "Maximum number of connections that can be allocated by the pool at a given time. Use a negative value for no limit.",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties$Pool",
+      "defaultValue": 8
+    },
+    {
+      "name": "spring.redis.jedis.pool.max-idle",
+      "type": "java.lang.Integer",
+      "description": "Maximum number of \"idle\" connections in the pool. Use a negative value to indicate an unlimited number of idle connections.",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties$Pool",
+      "defaultValue": 8
+    },
+    {
+      "name": "spring.redis.jedis.pool.max-wait",
+      "type": "java.time.Duration",
+      "description": "Maximum amount of time a connection allocation should block before throwing an exception when the pool is exhausted. Use a negative value to block indefinitely.",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties$Pool",
+      "defaultValue": "-1ms"
+    },
+    {
+      "name": "spring.redis.jedis.pool.min-idle",
+      "type": "java.lang.Integer",
+      "description": "Target for the minimum number of idle connections to maintain in the pool. This setting only has an effect if it is positive.",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties$Pool",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.max-attempts",
+      "type": "java.lang.Integer",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.password",
+      "type": "java.lang.String",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties"
+    },
+    {
+      "name": "spring.redis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "defaultValue": 6379
+    },
+    {
+      "name": "spring.redis.so-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "defaultValue": 0
+    },
+    {
+      "name": "spring.redis.ssl",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "spring.redis.timeout",
+      "type": "java.time.Duration",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties"
+    },
+    {
+      "name": "spring.redis.url",
+      "type": "java.lang.String",
+      "sourceType": "com.eeeffff.redis.spring.boot.RedisProperties"
+    }
+  ],
+  "hints": []
+}
