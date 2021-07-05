@@ -4,7 +4,7 @@ if [[ $DOIT =~ "Y" || $DOIT =~ "y" ]] ; then
     #切换到Master分支
     git checkout master
     #增加远程分支做为上游分支
-    git remote add upstream https://gitee.com/laofeng/common-utils.git
+    git remote add upstream https://gitee.com/laofeng/redis-spring-boot-starter.git
     #获取远程分支的更新
     git fetch upstream
     #将远程分支与本地文件进行合并
