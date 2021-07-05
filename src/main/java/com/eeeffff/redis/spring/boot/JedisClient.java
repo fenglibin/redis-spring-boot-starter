@@ -1,8 +1,3 @@
-/*
-* Copyright (c) 2017 eeeffff. All Rights Reserved.
-* @Owner:fenglibin
-* @Date:  2017-11-03 22:13
-*/
 package com.eeeffff.redis.spring.boot;
 
 
@@ -13,7 +8,6 @@ import java.util.Map;
  * redis interface
  *
  * @author: fenglibin
- * @date: 2017-12-05 12:08
  */
 public interface JedisClient {
 
@@ -23,8 +17,6 @@ public interface JedisClient {
      *
      * @param key 要取得值对应的key
      * @return 取到的value值
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     String get(String key);
 
@@ -33,7 +25,6 @@ public interface JedisClient {
      *
      * @param key 要取得值对应的key
      * @return 取到的value值
-     * @author: fenglibin
      */
     byte[] get(byte[] key);
 
@@ -44,8 +35,6 @@ public interface JedisClient {
      * @param key   值对应的键
      * @param value 值
      * @return 状态码, 成功则返回OK
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     String set(String key, String value);
 
@@ -65,8 +54,6 @@ public interface JedisClient {
      * @param value 值
      * @param second 过期时间
      * @return 状态码, 成功则返回OK
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     String set(String key, String value,Integer second);
 
@@ -77,8 +64,6 @@ public interface JedisClient {
      * @param value 值
      * @param second 过期时间
      * @return 状态码, 成功则返回OK
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     String set(byte[] key, byte[] value,Integer second);
     
@@ -89,8 +74,6 @@ public interface JedisClient {
      *
      * @param key 根据键判断
      * @return 判断结果
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Boolean exists(String key);
 
@@ -100,8 +83,6 @@ public interface JedisClient {
      * @param key   查找的存储的键
      * @param field 查找的存储的名字
      * @return 指定存储的值
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     String hget(String key, String field);
 
@@ -112,8 +93,6 @@ public interface JedisClient {
      * @param field 存储的名字
      * @param value 存储的值
      * @return 状态码, 1成功, 0失败, 如果field已存在将更新, 返回0
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Long hset(String key, String field, String value);
 
@@ -124,8 +103,6 @@ public interface JedisClient {
      * @param key   存储的键
      * @param field 存储的名字
      * @return 状态码, 1成功, 0失败
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Long hdel(String key, String... field);
 
@@ -136,8 +113,6 @@ public interface JedisClient {
      * @param key   存储的键
      * @param field 存储的额名字
      * @return 状态码, 1代表成功, 0代表失败
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Boolean hexists(String key, String field);
 
@@ -147,8 +122,6 @@ public interface JedisClient {
      *
      * @param key 存储的键
      * @return 根据key查找到的存储的名字和值
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Map<String, String> hgetAll(String key);
 
@@ -158,8 +131,6 @@ public interface JedisClient {
      *
      * @param key hash中存储的键
      * @return 指定键的所有value的集合
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     List<String> hvals(String key);
 
@@ -169,8 +140,6 @@ public interface JedisClient {
      *
      * @param key 要使用的键
      * @return 递增后的结果
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Long incr(String key);
 
@@ -179,8 +148,6 @@ public interface JedisClient {
      *
      * @param key 要使用的键
      * @return 递减后的结果
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Long decr(String key);
 
@@ -190,8 +157,6 @@ public interface JedisClient {
      * @param key     要设置过期时间的k键值对的键
      * @param seconds 过期时间
      * @return 影响的记录数
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Long expire(String key, int seconds);
 
@@ -200,8 +165,6 @@ public interface JedisClient {
      *
      * @param key 要查看的键值对的键
      * @return 剩余时间
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Long ttl(String key);
 
@@ -210,8 +173,6 @@ public interface JedisClient {
      *
      * @param key 存储的键
      * @return 状态码, 1成功, 0失败
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Long del(String key);
 
@@ -220,8 +181,6 @@ public interface JedisClient {
      *
      * @param key 存储的键
      * @return 状态码, 1成功, 0失败
-     * @author: fenglibin
-     * @date : 2017/12/5:17:45
      */
     Long hdel(String hkey, String key);
 

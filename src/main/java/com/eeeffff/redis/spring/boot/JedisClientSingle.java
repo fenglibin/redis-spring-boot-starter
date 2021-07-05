@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2014 eeeffff. All Rights Reserved.
- * @author jiangchao
- * @date  2019-04-15 10:19
- */
 package com.eeeffff.redis.spring.boot;
 
 import java.util.List;
@@ -13,8 +8,7 @@ import redis.clients.jedis.JedisPool;
 /**
  * jedis标准模式 （非切片和集群模式）
  *
- * @author jiangchaoo
- * @date 2019-04-15 10:19
+ * @author fenglibin
  */
 public class JedisClientSingle implements JedisClient {
 

@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2017 eeeffff. All Rights Reserved.
- * @Owner: fenglibin
- * @Date:  2017-11-03 10:10
- */
 package com.eeeffff.redis.spring.boot;
 
 import java.util.ArrayList;
@@ -33,7 +28,6 @@ import redis.clients.jedis.ShardedJedisPool;
  * redis autoConfig
  *
  * @author: fenglibin
- * @Date: 2017-11-03 10:10
  */
 @Slf4j
 @Configuration
@@ -118,7 +112,7 @@ public class RedisAutoConfigure {
 	/**
 	 * RedisTemplate配置
 	 * 
-	 * @param connectionFactory
+	 * @param factory
 	 * @return
 	 */
 	@Bean

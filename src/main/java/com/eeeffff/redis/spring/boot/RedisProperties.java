@@ -1,8 +1,3 @@
-/*
-* Copyright (c) 2017 eeeffff. All Rights Reserved.
-* @Owner:fenglibin
-* @Date:  2018-01-22 22:37
-*/
 package com.eeeffff.redis.spring.boot;
 
 import java.time.Duration;

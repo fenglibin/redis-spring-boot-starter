@@ -1,8 +1,3 @@
-/*
- * Copyright (c) 2017 eeeffff. All Rights Reserved.
- * @owner: fenglibin
- * @date:  2017-12-05 16:07
- */
 package com.eeeffff.redis.spring.boot;
 
 import java.util.List;
@@ -14,7 +9,6 @@ import redis.clients.jedis.ShardedJedisPool;
  * 类或方法的功能描述 :TODO
  *
  * @author: fenglibin
- * @date: 2017-12-05 16:07
  */
 public class JedisClientSharded implements JedisClient {
 
@@ -40,12 +34,9 @@ public class JedisClientSharded implements JedisClient {
 	}
 
 	/**
+	 * 当字符串类型的时在value后面追加
 	 * @param key   键名
 	 * @param value 被保存的值
-	 * @Description: 当字符串类型的时在value后面追加
-	 * @remark
-	 * @author
-	 * @date 2017/11/6:11:23
 	 */
 	public long append(String key, String value) {
 
@@ -55,10 +46,9 @@ public class JedisClientSharded implements JedisClient {
 	}
 
 	/**
-	 * @Description: 设置过期时间
-	 * @remark
-	 * @author
-	 * @date 2016-7-8
+	 * 设置过期时间
+	 * @param key
+	 * @param seconds
 	 */
 	@Override
 	public Long expire(String key, int seconds) {
@@ -84,11 +74,8 @@ public class JedisClientSharded implements JedisClient {
 	}
 
 	/**
+	 * 获取数据(string)
 	 * @param key 键名
-	 * @Description: 获取数据(string)
-	 * @remark
-	 * @author
-	 * @date 2017/11/6:11:23
 	 */
 	@Override
 	public String get(String key) {
