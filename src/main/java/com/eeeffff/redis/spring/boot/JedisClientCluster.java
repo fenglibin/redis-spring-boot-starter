@@ -1,8 +1,3 @@
-/*
-* Copyright (c) 2017 eeeffff. All Rights Reserved.
-* @owner: fenglibin
-* @date:  2017-12-05 12:08
-*/
 package com.eeeffff.redis.spring.boot;
 
 import redis.clients.jedis.JedisCluster;
@@ -14,7 +9,6 @@ import java.util.Map;
  * 类或方法的功能描述 :TODO
  *
  * @author: fenglibin
- * @date: 2017-12-05 12:08
  */
 public class JedisClientCluster implements JedisClient {
 
